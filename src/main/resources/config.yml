@@ -1,0 +1,397 @@
+# EVENTOWKI FIRESTAR - config
+# Wpisz URL i SHA-1 resource packa (plik EventowkiFirestar-pack.zip)
+resource-pack:
+  url: ""
+  sha1: "26f8142d0952cc442bc50e6ad91be0d598f45dd9"
+  force: true
+  prompt: "&dPobierz resource pack eventówek!"
+
+settings:
+  zamek_z_piasku: { duration: 10, radius-note: 'zamek ma stały rozmiar 9x9' }
+  lampion: { cooldown: 120 }
+  skorka_od_banana: { cooldown: 30 }
+  lod_na_patyku: { cooldown: 20, freeze-seconds: 5 }   # cooldown i czas blokady skoku - do ustalenia
+  mozg_zombie: { cooldown: 120 }
+  lasso: { cooldown: 150, duration: 5, range: 3.1 }
+  bomba: { radius: 3 }
+  piekielny_miecz: { nether-damage-multiplier: 1.25, negate-fire-res-chance: 0.3 }
+  esencja_obrazen_krytycznych: { damage-multiplier: 1.2 }
+  czerwona_mikstura: { cooldown: 120 }   # TYMCZASOWE: Sila II + Szybkosc I na 10s
+  plomienna_torba:
+    valuables: [DIAMOND, DIAMOND_BLOCK, NETHERITE_INGOT, NETHERITE_SCRAP, GOLD_INGOT, GOLD_BLOCK, EMERALD, EMERALD_BLOCK, ENCHANTED_GOLDEN_APPLE, GOLDEN_APPLE, TOTEM_OF_UNDYING, NETHER_STAR, ELYTRA]
+
+eventowki:
+  zamek_z_piasku:
+    material: CLAY_BALL
+    custom-model-data: 1015
+    name: "&6&lᴢᴀᴍᴇᴋ ᴢ ᴘɪᴀꜱᴋᴜ"
+    lore:
+      - ""
+      - "&8✕ &7Po użyciu &etworzymy &7dookoła"
+      - "&8✕ &7nas &6zamek z piasku &7i zamykamy w nim"
+      - "&8✕ &7wszystkich graczy w obrębie na określony czas"
+      - ""
+      - "&a&lKliknij PPM &aaby użyć!"
+
+  smoczy_totem:
+    material: TOTEM_OF_UNDYING
+    custom-model-data: 1017
+    name: "&5&lꜱᴍᴏᴄᴢʏ ᴛᴏᴛᴇᴍ"
+    lore:
+      - ""
+      - "&d▪ &7Po zniszczeniu &etotemu &7nasze zdrowie"
+      - "&d▪ &7zostaje od razu &dzregenerowane &7do pełna"
+      - ""
+      - "&c&l▪ Uwaga! Przedmiot jest jednorazowy"
+
+  lampion:
+    material: LANTERN
+    custom-model-data: 1012
+    name: "&6&lʟᴀᴍᴘɪᴏɴ"
+    lore:
+      - ""
+      - "&8✕ &7Po użyciu otrzymujesz &cRegenerację IV"
+      - "&8✕ &7i &9Odporność II &7na &e7 sekund&7!"
+      - ""
+      - "&8✕ &7Przedmiot jest &awielorazowy &7(cooldown: &e120s&7)"
+      - ""
+      - "&a&lKliknij PPM &aaby użyć!"
+
+  skorka_od_banana:
+    material: YELLOW_DYE
+    custom-model-data: 1010
+    name: "&e&lꜱᴋᴏʀᴋᴀ ᴏᴅ ʙᴀɴᴀɴᴀ"
+    lore:
+      - ""
+      - "&8✕ &7Uderz gracza, aby &emieszać &7mu"
+      - "&8✕ &7przedmioty na pasku &8(hotbar)&7!"
+      - ""
+      - "&8✕ &7Cooldown: &e30 sekund"
+      - "&c✕ Przedmiot jest jednorazowy"
+      - ""
+      - "&a&lUderz gracza &aaby użyć!"
+
+  kostka_wyroku:
+    material: HEART_OF_THE_SEA
+    custom-model-data: 1001
+    name: "&d&lᴋᴏꜱᴛᴋᴀ ᴡʏʀᴏᴋᴜ"
+    lore:
+      - ""
+      - "&8✕ &7Po użyciu mamy szansę na otrzymanie"
+      - "&8✕ &7efektu &csiły III &7lub &bspowolnienia I &7na kilka sekund"
+      - ""
+      - "&8✕ &7&4&lUwaga! &cPrzedmiot jest jednorazowy"
+      - ""
+      - "&a&lKliknij PPM &aaby użyć"
+
+  krysztalowy_kij:
+    material: STICK
+    custom-model-data: 1020
+    name: "&5&lᴋʀʏꜱᴢᴛᴀʟᴏᴡʏ ᴋɪᴊ"
+    enchants:
+      knockback: 4
+    lore:
+      - ""
+      - "&d▪ &7Przedmiot ten posiada zaklęcie &cOdrzut IV"
+
+  lod_na_patyku:
+    material: COOKIE
+    custom-model-data: 1013
+    name: "&d&lʟᴏᴅ ɴᴀ ᴘᴀᴛʏᴋᴜ"
+    lore:
+      - ""
+      - "&8✕ &7Po uderzeniu gracza &bzamrażamy &7mu"
+      - "&8✕ &7możliwość &askakania &7na określony czas"
+
+  piekielny_miecz:
+    material: NETHERITE_SWORD
+    custom-model-data: 1009
+    name: "&6&lᴘɪᴇᴋɪᴇʟɴʏ ᴍɪᴇᴄᴢ"
+    enchants:
+      sharpness: 6
+      fire_aspect: 2
+      looting: 3
+      unbreaking: 6
+    lore:
+      - ""
+      - "&8≡ &7&lWłaściwości:"
+      - "&8↳ &7Zwiększone obrażenia w &cnetherze"
+      - "&8↳ &7Szansa na &bzniwelowanie &7przeciwnikowi &6odporności na ogień"
+
+  plomienna_torba:
+    material: LEATHER
+    custom-model-data: 1005
+    name: "&c&lᴘʟᴏᴍɪᴇɴɴᴀ ᴛᴏʀʙᴀ"
+    lore:
+      - ""
+      - "&8✕ &7Trzymając torbę w ekwipunku trafiają do niej"
+      - "&8✕ &7wszystkie &ecenne &7przedmioty z &czabitych graczy"
+      - ""
+      - "&a&lKliknij PPM &aaby otworzyć!"
+
+  koniczynka:
+    material: GREEN_DYE
+    custom-model-data: 1006
+    name: "&a&lᴋᴏɴɪᴄᴢʏɴᴋᴀ"
+    lore:
+      - ""
+      - "&a▪ &7Przedmiot służący do losowania"
+      - "&a▪ &7dodatkowych obrażeń w &e/szczesciarz&7!"
+
+  kokos:
+    material: GOLDEN_APPLE
+    custom-model-data: 1021
+    name: "&d&lᴋᴏᴋᴏꜱ"
+    lore:
+      - ""
+      - "&8≡ &7&lPo zjedzeniu otrzymujemy:"
+      - "&8↳ &dEfekt regeneracja II &7(20s)"
+      - "&8↳ &eEfekt absorpcja V &7(120s)"
+      - "&8↳ &bEfekt szybkość II &7(10s)"
+      - "&8↳ &aEfekt odporności I &7(300s)"
+      - "&8↳ &6Efekt ognioodporności I &7(300s)"
+      - ""
+      - "&c✕ &4&lUwaga! &cPrzedmiot jest jednorazowy"
+      - ""
+      - "&a&lPrzytrzymaj PPM &aaby zjeść"
+
+  bomba:
+    material: GUNPOWDER
+    custom-model-data: 1004
+    name: "&6&lʙᴏᴍʙᴀ"
+    lore:
+      - ""
+      - "&6▪ &7Po rzuceniu bomby,"
+      - "&7  wszystkie bloki w obrębie kilku kratek"
+      - "&7  zostają &cwysadzone"
+      - ""
+      - "&6▪ &4&lUwaga! &cPrzedmiot jest jednorazowy"
+      - ""
+      - "&a&lKliknij PPM &aaby rzucić"
+
+  pilka_plazowa:
+    material: SNOWBALL
+    custom-model-data: 1019
+    name: "&c&lᴘɪʟᴋᴀ &a&lᴘʟᴀᴢᴏᴡᴀ"
+    lore:
+      - ""
+      - "&8✕ &7Po trafieniu w gracza &dzamieniamy się &7z nim miejscami"
+      - "&c✕ &4&lUwaga! &cPrzedmiot jest jednorazowy"
+      - ""
+      - "&a&lKliknij PPM &aaby rzucić"
+
+  excalibur:
+    material: DIAMOND_SWORD
+    custom-model-data: 1011
+    name: "&c&lᴇxᴄᴀʟɪʙᴜʀ"
+    enchants:
+      sharpness: 6
+      unbreaking: 6
+    lore:
+      - ""
+      - "&c» &7Podstawowo posiada &c11.5 obrażeń &6(Ostrość VI)"
+      - "&c» &7Zabijając &e50 różnych graczy &aulepszysz &7go do &c12 obrażeń &6(Ostrość VII)"
+      - ""
+      - "&c» &7Zabójstwa na mieczu: &e%kills%&7/&e50 &8[%progress_bar%&8]"
+      - ""
+      - "&c» &cAktualne obrażenia od ataku: &f%damage%"
+
+  esencja_obrazen_krytycznych:
+    material: EXPERIENCE_BOTTLE
+    custom-model-data: 1030
+    name: "&d&lᴇꜱᴇɴᴄᴊᴀ ᴏʙʀᴀᴢᴇɴ ᴋʀʏᴛʏᴄᴢɴʏᴄʜ"
+    lore:
+      - ""
+      - "&8» &7Po nałożeniu na miecz &dbijesz więcej"
+      - ""
+      - "&8» &7Można nałożyć na: &fmiecze"
+      - ""
+      - "&a▶ Połóż esencję w drugim slocie kowadła"
+
+  esencja_ogniodpornosci:
+    material: EXPERIENCE_BOTTLE
+    custom-model-data: 1031
+    name: "&6&lᴇꜱᴇɴᴄᴊᴀ ᴏɢɴɪᴏᴅᴘᴏʀɴᴏꜱᴄɪ"
+    lore:
+      - ""
+      - "&8» &7Stały efekt &6odporności na ogień"
+      - ""
+      - "&8» &7Można nałożyć na: &fspodnie"
+      - ""
+      - "&a▶ Połóż esencję w drugim slocie kowadła"
+
+  mozg_zombie:
+    material: PINK_DYE
+    custom-model-data: 1032
+    name: "&a&lᴍᴏᴢɢ ᴢᴏᴍʙɪᴇ"
+    lore:
+      - ""
+      - "&8✕ &7Uderz gracza, aby nałożyć na niego"
+      - "&8✕ &7&aNudności &7i &aSpowolnienie II &7na &e5 sekund&7!"
+      - ""
+      - "&8✕ &7Przedmiot jest &awielorazowy &7(cooldown: &e120s&7)"
+      - ""
+      - "&a&lUderz gracza &aaby użyć!"
+
+  lasso:
+    material: LEAD
+    custom-model-data: 1033
+    name: "&6&lʟᴀꜱꜱᴏ"
+    lore:
+      - ""
+      - "&8✕ &7Użyj lassa na pobliskim graczu,"
+      - "&8✕ &7aby &6przyciągać go do siebie &7co 2 sekundy"
+      - "&8✕ &7przez 5 sekund oraz &czablokować elytry&7!"
+      - ""
+      - "&8✕ &7Czas trwania: &e5s"
+      - "&8✕ &7Zasięg: &e~3.1 kratek"
+      - "&8✕ &7Cooldown: &e2.5 minuty"
+      - ""
+      - "&a&lKliknij PPM &ana gracza, aby użyć!"
+
+  mistyczne_serce:
+    material: AMETHYST_SHARD
+    custom-model-data: 1034
+    name: "&5&lᴍɪꜱᴛʏᴄᴢɴᴇ ꜱᴇʀᴄᴇ"
+    lore:
+      - ""
+      - "&8✕ &7Mistyczny artefakt zwiększający Twoje"
+      - "&8✕ &7maksymalne zdrowie na stałe o &d+1 serce &7(+2 HP)&7!"
+      - ""
+      - "&8✕ &7Domyślna liczba serc: &e30"
+      - "&8✕ &7Maksymalny limit serc: &c40 &7(&d10 użyć&7)"
+      - "&c✕ Po śmierci tracisz 1 dodatkowe serce!"
+      - "&8✕ &7Dodatkowe serce nie wypada po śmierci/zabójstwie."
+      - ""
+      - "&a&lKliknij PPM &aaby użyć!"
+
+  dynamit:
+    material: BLAZE_ROD
+    custom-model-data: 1035
+    name: "&c&lᴅʏɴᴀᴍɪᴛ"
+    lore:
+      - ""
+      - "&6▪ &7Dynamitu możesz użyć,"
+      - "&7  aby &czniszczyć &7wybrany bedrock"
+      - ""
+      - "&6▪ &4&lUwaga! &cPrzedmiot jest jednorazowy"
+      - ""
+      - "&a&lKliknij PPM &ana bedrock!"
+
+  czerwona_mikstura:
+    material: EXPERIENCE_BOTTLE
+    custom-model-data: 1036
+    name: "&c&lᴄᴢᴇʀᴡᴏɴᴀ ᴍɪᴋꜱᴛᴜʀᴀ"
+    lore:
+      - ""
+      - "&e⚠ &7Funkcja tymczasowa &8(do zmiany w configu)"
+      - "&8✕ &7Po użyciu otrzymujesz &cSiłę II &7i &bSzybkość I"
+      - "&8✕ &7na &e10 sekund"
+      - ""
+      - "&8✕ &7Przedmiot jest &awielorazowy &7(cooldown: &e120s&7)"
+      - ""
+      - "&a&lKliknij PPM &aaby użyć!"
+
+  gwiezdny_helm_1:
+    material: NETHERITE_HELMET
+    custom-model-data: 1040
+    name: "&b&lɢᴡɪᴇᴢᴅɴʏ ʜᴇʟᴍ &6✪ &e1"
+    enchants:
+      protection: 5
+      unbreaking: 5
+    lore:
+      - ""
+      - "&b✦ &7Gwiezdny Set &6✪ &e1"
+      - ""
+      - "&7Część kompletu &bGwiezdnego Setu &6✪1"
+
+  gwiezdny_klata_1:
+    material: NETHERITE_CHESTPLATE
+    custom-model-data: 1041
+    name: "&b&lɢᴡɪᴇᴢᴅɴᴀ ᴋʟᴀᴛᴀ &6✪ &e1"
+    enchants:
+      protection: 5
+      unbreaking: 5
+    lore:
+      - ""
+      - "&b✦ &7Gwiezdny Set &6✪ &e1"
+      - ""
+      - "&7Część kompletu &bGwiezdnego Setu &6✪1"
+
+  gwiezdny_spodnie_1:
+    material: NETHERITE_LEGGINGS
+    custom-model-data: 1042
+    name: "&b&lɢᴡɪᴇᴢᴅɴᴇ ꜱᴘᴏᴅɴɪᴇ &6✪ &e1"
+    enchants:
+      protection: 5
+      unbreaking: 5
+    lore:
+      - ""
+      - "&b✦ &7Gwiezdny Set &6✪ &e1"
+      - ""
+      - "&7Część kompletu &bGwiezdnego Setu &6✪1"
+
+  gwiezdny_buty_1:
+    material: NETHERITE_BOOTS
+    custom-model-data: 1043
+    name: "&b&lɢᴡɪᴇᴢᴅɴᴇ ʙᴜᴛʏ &6✪ &e1"
+    enchants:
+      protection: 5
+      unbreaking: 5
+    lore:
+      - ""
+      - "&b✦ &7Gwiezdny Set &6✪ &e1"
+      - ""
+      - "&7Część kompletu &bGwiezdnego Setu &6✪1"
+
+  gwiezdny_helm_2:
+    material: NETHERITE_HELMET
+    custom-model-data: 1044
+    name: "&b&lɢᴡɪᴇᴢᴅɴʏ ʜᴇʟᴍ &6✪ &e2"
+    enchants:
+      protection: 6
+      unbreaking: 6
+    lore:
+      - ""
+      - "&b✦ &7Gwiezdny Set &6✪ &e2"
+      - ""
+      - "&7Część kompletu &bGwiezdnego Setu &6✪2"
+
+  gwiezdny_klata_2:
+    material: NETHERITE_CHESTPLATE
+    custom-model-data: 1045
+    name: "&b&lɢᴡɪᴇᴢᴅɴᴀ ᴋʟᴀᴛᴀ &6✪ &e2"
+    enchants:
+      protection: 6
+      unbreaking: 6
+    lore:
+      - ""
+      - "&b✦ &7Gwiezdny Set &6✪ &e2"
+      - ""
+      - "&7Część kompletu &bGwiezdnego Setu &6✪2"
+
+  gwiezdny_spodnie_2:
+    material: NETHERITE_LEGGINGS
+    custom-model-data: 1046
+    name: "&b&lɢᴡɪᴇᴢᴅɴᴇ ꜱᴘᴏᴅɴɪᴇ &6✪ &e2"
+    enchants:
+      protection: 6
+      unbreaking: 6
+    lore:
+      - ""
+      - "&b✦ &7Gwiezdny Set &6✪ &e2"
+      - ""
+      - "&7Część kompletu &bGwiezdnego Setu &6✪2"
+
+  gwiezdny_buty_2:
+    material: NETHERITE_BOOTS
+    custom-model-data: 1047
+    name: "&b&lɢᴡɪᴇᴢᴅɴᴇ ʙᴜᴛʏ &6✪ &e2"
+    enchants:
+      protection: 6
+      unbreaking: 6
+    lore:
+      - ""
+      - "&b✦ &7Gwiezdny Set &6✪ &e2"
+      - ""
+      - "&7Część kompletu &bGwiezdnego Setu &6✪2"

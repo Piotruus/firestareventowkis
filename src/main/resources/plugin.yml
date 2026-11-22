@@ -1,0 +1,16 @@
+name: EventowkiFirestar
+version: 1.0.0
+main: pl.firestar.eventowki.EventowkiPlugin
+api-version: '1.21'
+author: Firestar
+description: Eventowki Firestar - itemy z resource packiem
+commands:
+  eventowki:
+    description: Menu eventowek
+    aliases: [ev, eventowka]
+  szczesciarz:
+    description: Losowanie dodatkowych obrazen (Koniczynka)
+permissions:
+  eventowki.admin:
+    description: Dawanie eventowek i przeladowanie configu
+    default: op
